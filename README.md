@@ -1,4 +1,4 @@
-# nasa
+# nasa-search
 
 > A Vue.js project
 
