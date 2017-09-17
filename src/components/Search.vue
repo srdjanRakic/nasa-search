@@ -4,7 +4,7 @@
     <form v-on:submit.prevent="getResult(query)">
       <input type="text" placeholder="Type in your search" v-model="query">
     </form>
-    <div v-if="results">
+    <div class="results" v-if="results">
       <div v-for="(result, index) in results" v-bind:key="index">
         <img v-bind:src="result.links[0].href">
       </div>
@@ -38,6 +38,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.results img {
+  height: 300px;
+  margin: 10px;
+}
+
 h1, h2 {
   font-weight: normal;
 }
